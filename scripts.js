@@ -1,5 +1,5 @@
 // Replace with your actual API key
-const API_KEY = 'AIzaSyDjfCGhmw-oAZbDQf-lCo8-fJJr5ARA-SU';
+const API_KEY = 'YOUR API KEY';
 const API_URL = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent';
 
 // Configure marked.js for better formatting
