@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TalentTrail - AI-Powered Exam Preparation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styled.css">
+</head>
+<body>
+<header class="header">
+    <div class="container header__container">
+        <a href="#" class="header__logo">
+            <i class="fas fa-brain"></i>
+            TalentTrail
+        </a>
+        <button class="nav__button">
+            <i class="fas fa-redo"></i>
+            Reset
+        </button>
+    </div>
+</header>
+
+<main class="main" role="main">
+    <section class="section hero">
+        <div class="hero__container">
+            <h1 id="ai-powered-exam-preparation" class="hero__title">AI-Powered Exam Preparation</h1>
+            <p class="hero__subtitle">Upload Your Notes & Amplify Your Learning</p>
+        </div>
+    </section>
+
+    <section class="section analysis-tool">
+        <div class="container">
+            <div class="upload-section">
+                <div class="file-upload">
+                    <input type="file" id="fileUpload" class="file-upload__input" accept=".pdf">
+                    <label for="fileUpload" class="file-upload__label">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                        Choose PDF File
+                    </label>
+                    <span class="file-upload__name"></span>
+                </div>
+            </div>
+
+            <div class="action-buttons">
+                <button class="action-button" data-action="summary">
+                    <i class="fas fa-file-alt"></i>
+                    Get Detailed Summary
+                </button>
+                <button class="action-button" data-action="questions">
+                    <i class="fas fa-question-circle"></i>
+                    Generate Questions
+                </button>
+                <button class="action-button" data-action="paper">
+                    <i class="fas fa-file-signature"></i>
+                    Create Question Paper
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <div id="loadingOverlay" class="loading-overlay">
+        <div class="loading-content">
+            <div class="loading-spinner"></div>
+            <p>TrailBot Is Thinking...</p>
+        </div>
+    </div>
+
+    <section id="resultSection" class="section result-section">
+        <div class="container">
+            <!-- Results will be dynamically inserted here -->
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer__content">
+            <p>© TalentTrail - 7th Sem Minor Project</p>
+            <p>Aditya Vardhan Sharma | Akhilesh Sharma</p>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/marked/4.0.2/marked.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+<script src="scripts.js"></script>
+</body>
+</html>
